@@ -14,4 +14,8 @@ class Car:
         # Increases the car's speed by 5
         self.__speed += 5
 
+    def brake(self):
         # Decreases the car's speed by 5
+        self.__speed -= 5
+        if self.__speed < 0:
+            self.__speed = 25
