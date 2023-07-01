@@ -9,3 +9,9 @@ class Car:
         self.__yearmodel = yearmodel
         self.__make = make
         self.__speed = 0 
+
+    def accelerate(self):
+        # Increases the car's speed by 5
+        self.__speed += 5
+
+        # Decreases the car's speed by 5
