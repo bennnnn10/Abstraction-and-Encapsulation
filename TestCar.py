@@ -30,3 +30,27 @@ for _ in range (1):
     print("The current speed is", speed)
 
 # Brakes 5 times
+for _ in range (1):
+    car_info.brake()
+    speed = car_info.get_speed()
+    print("The current speed is", speed)
+
+for _ in range (1):
+    car_info.brake()
+    speed = car_info.get_speed()
+    print("Decelerating to", speed)
+
+for _ in range (1):
+    car_info.brake()
+    speed = car_info.get_speed()
+    print("Decelerating to", speed)
+
+for _ in range (1):
+    car_info.brake()
+    speed = car_info.get_speed()
+    print("Decelerating to", speed)
+
+for _ in range (1):
+    car_info.brake()
+    speed = car_info.get_speed()
+    print("The current speed is", speed)
