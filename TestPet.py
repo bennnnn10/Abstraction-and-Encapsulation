@@ -4,7 +4,13 @@ pet = Pet()
 
 pet_name = input("What is the name of your pet? ")
 animal_type = input("What type of animal is your pet? ")
-age = int(input("How old is you pet? "))
+
+while True:
+    try:
+        age = int(input("How old is you pet? "))
+        break
+    except ValueError:
+        print("Invalid data. Please provide a valid age.")
 
 pet.set_name(pet_name)
 pet.set_animal_type(animal_type)
