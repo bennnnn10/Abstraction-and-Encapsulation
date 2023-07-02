@@ -1,3 +1,4 @@
+import tkinter as tk
 from termcolor import colored
 import pyfiglet
 
@@ -39,6 +40,32 @@ pet.set_name(pet_name)
 pet.set_animal_type(animal_type)
 pet.set_age(age)
 
-print("The name of your pet is", pet.get_name())
-print(pet.get_name(), "is a", pet.get_animal_type())
-print("Your pet", pet.get_name(), "is", pet.get_age(), "year/s old.")
+def display_information():
+    pet_name = pet.get_name()
+    animal_type = pet.get_animal_type()
+    age = pet.get_age()
+
+    information  = f"The name of your pet is {pet_name}\n"
+    information += f"{pet_name} is a {animal_type}\n"
+    information += f"Your pet {pet_name} is {age} year/s old."
+
+     # Tkinter window
+    window = tk.Tk()
+    window.title("Vetcare")
+    window.geometry("400x200")
+
+    # Header Label
+    header_label = tk.Label(window, text="Pet's Information", font=("Helvetica", 14, "bold"))
+    header_label.pack(pady=10)
+
+    # Label to display the information
+    label = tk.Label(window, text=information, font=("Helvetica", 12))
+    label.pack(pady=10)
+
+    # Button to close the window
+    button = tk.Button(window, text="Close", command=window.destroy)
+    button.pack()
+
+    window.mainloop()
+
+display_information()
