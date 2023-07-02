@@ -9,11 +9,16 @@ class Fan:
     FAST = 3
 
     # Constructor
+    def __init__(self, speed=SLOW, on=False, radius=5, color="blue"):
         # Private Methods
         # Private int data field named speed
+        self.__speed = int(speed)
         # Private bool data field named on that specifies whether the fan is on
+        self.__on = bool(on)
         # Private float data field named radius
+        self.__radius = float(radius)
         # Private string data field named color
+        self.__color = str(color)
 
     # Getter Method
     # Setter Method
