@@ -21,4 +21,20 @@ class Fan:
         self.__color = str(color)
 
     # Getter Method
+    def get_speed(self):
+        # Speed
+        return self.__speed
+    
+    def get_on(self):
+        # On/Off
+        return self.__on
+    
+    def get_radius(self):
+        # Radius
+        return self.__radius
+    
+    def get_color(self):
+        # Color
+        return self.__color
+    
     # Setter Method
